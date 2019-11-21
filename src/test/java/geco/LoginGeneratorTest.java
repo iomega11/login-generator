@@ -64,5 +64,18 @@ public class LoginGeneratorTest {
         assertEquals(login,loginGenere);
         // Il faudrait aussi tester que la liste des logins est bien incrémentée
         // de la bonne valeur.
+
+        /* CT */
+        // Given
+        nom = "Du";
+        prenom = "Paul";
+        login = "PDU";
+        // When
+        loginGenere = loginGenerator.generateLoginForNomAndPrenom(nom,prenom);
+        // Then
+        assertEquals(login,loginGenere);
+        // Il faudrait aussi tester que la liste des logins est bien incrémentée
+        // de la bonne valeur.
+
     }
 }
