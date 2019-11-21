@@ -28,5 +28,41 @@ public class LoginGeneratorTest {
         assertEquals(login,loginGenere);
         // Il faudrait aussi tester que la liste des logins est bien incrémentée
         // de la bonne valeur.
+
+        /* CT1 bis */
+        // Given
+        nom = "Ralling";
+        prenom = "John";
+        login = "JRAL2";
+        // When
+        loginGenere = loginGenerator.generateLoginForNomAndPrenom(nom,prenom);
+        // Then
+        assertEquals(login,loginGenere);
+        // Il faudrait aussi tester que la liste des logins est bien incrémentée
+        // de la bonne valeur.
+
+        /* CT2 */
+        // Given
+        nom = "Rolling";
+        prenom = "Jean";
+        login = "JROL1";
+        // When
+        loginGenere = loginGenerator.generateLoginForNomAndPrenom(nom,prenom);
+        // Then
+        assertEquals(login,loginGenere);
+        // Il faudrait aussi tester que la liste des logins est bien incrémentée
+        // de la bonne valeur.
+
+        /* CT3 */
+        // Given
+        nom = "Dùrand";
+        prenom = "Paul";
+        login = "PDUR1";
+        // When
+        loginGenere = loginGenerator.generateLoginForNomAndPrenom(nom,prenom);
+        // Then
+        assertEquals(login,loginGenere);
+        // Il faudrait aussi tester que la liste des logins est bien incrémentée
+        // de la bonne valeur.
     }
 }
